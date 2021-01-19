@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import Estruc from './component/estruc';
 
-function App() {
+function App(props) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Estruc 
+    num1 = {props.counter}
+    num2 = {props.counter2}
+    num3 = {props.counter3}
+    num4 = {props.counter4}
+    num5 = {props.counter5}
+    num6 = {props.counter6}
+    />
+    </>
   );
 }
 
 export default App;
+
